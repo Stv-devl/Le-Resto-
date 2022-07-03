@@ -28,34 +28,29 @@ $white1: rgb(243, 243, 243);
 $grey1: rgb(193, 188, 188);
 $grey2: rgb(233, 233, 233);
 $grey3: rgb(105, 105, 105);
-$orange1: rgb(155, 132, 89);
+$orange1: rgb(172, 127, 43);
 
 
 /*set mixin for titles attributions and center elements*/
 @mixin orange-title {
   font-family: $font1;
   color: $orange1;
-
 }
-
 @mixin white-title01 {
   font-family: $font2;
   color: $white1;
   text-transform: uppercase;
 }
-
 @mixin white-title02 {
   font-family: $font3;
   color: $white1;
   text-transform: uppercase;
 }
-
 @mixin white-title03 {
   font-family: $font1;
   color: $white1;
   text-transform: uppercase;
 }
-
 @mixin center {
   display: flex;
   justify-content: center;
@@ -86,24 +81,6 @@ body {
   font-family: $font2;
   max-width: 1450px;
   margin: 0 auto;
-
-  &:before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: $grey3;
-    animation: animBefore 1.5s ease forwards;
-    animation-delay: 0.15s;
-
-    @keyframes animBefore {
-      to {
-        opacity: 0;
-      }
-    }
-  }
 }
 /*set orange color title*/
 h2,

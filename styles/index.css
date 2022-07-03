@@ -43,34 +43,11 @@ body {
   max-width: 1450px;
   margin: 0 auto;
 }
-body:before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: rgb(105, 105, 105);
-  -webkit-animation: animBefore 1.5s ease forwards;
-          animation: animBefore 1.5s ease forwards;
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
-}
-@-webkit-keyframes animBefore {
-  to {
-    opacity: 0;
-  }
-}
-@keyframes animBefore {
-  to {
-    opacity: 0;
-  }
-}
 
 /*set orange color title*/
 h2,
 h3 {
-  color: rgb(155, 132, 89);
+  color: rgb(172, 127, 43);
 }
 
 /**********************************************************
@@ -114,7 +91,7 @@ Header setting
   transition: 0.3s;
 }
 .header-top nav .nav-bar li:hover {
-  color: rgb(155, 132, 89);
+  color: rgb(172, 127, 43);
   transform: scale(1.1);
   font-weight: bold;
 }
@@ -126,7 +103,7 @@ Header setting
   color: rgb(243, 243, 243);
 }
 .header-top nav .icons a:hover {
-  color: rgb(155, 132, 89);
+  color: rgb(172, 127, 43);
 }
 .header-top .text-container {
   display: flex;
@@ -141,7 +118,7 @@ Header setting
 }
 .header-top .text-container h2 {
   font-family: allura, sans-serif;
-  color: rgb(155, 132, 89);
+  color: rgb(172, 127, 43);
   font-size: 4rem;
   font-weight: 300;
   height: 40px;
@@ -175,7 +152,7 @@ Header setting
   /*create dash border + flexbox for center and separate elements*/
 }
 .grid-header .header-b-left {
-  border: 1.5px dashed rgb(155, 132, 89);
+  border: 1.5px dashed rgb(172, 127, 43);
   width: 95%;
   height: 93%;
   margin: auto;
@@ -186,10 +163,11 @@ Header setting
   /*bigger img*/
   /*set text*/
   /*set img in circle*/
+  /*set txt*/
 }
 .grid-header .header-b-left .flex-c-1 h3 {
   font-family: allura, sans-serif;
-  color: rgb(155, 132, 89);
+  color: rgb(172, 127, 43);
   font-size: 1.8rem;
 }
 .grid-header .header-b-left .flex-c-1 h4 {
@@ -217,6 +195,69 @@ Header setting
   font-family: roboto, serif;
 }
 
+/*img left*/
 .header-b-right {
   background: url(..//..//img/store-01.jpg) center/cover;
+}
+
+/*Set relative container separate element with 1 flexbox*/
+.container-relative {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 900px;
+  position: relative;
+  z-index: 1;
+  /*Set the menu nav bar with 1 flexbox + hover*/
+  /*grid with 2 columns and 4 lignes*/
+}
+.container-relative h3 {
+  font-family: allura, sans-serif;
+  color: rgb(172, 127, 43);
+  font-size: 2.5rem;
+}
+.container-relative img {
+  width: 30px;
+  height: 30px;
+}
+.container-relative ul {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  color: rgb(243, 243, 243);
+}
+.container-relative ul li {
+  border-bottom: 1px solid rgb(243, 243, 243);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container-relative ul li:hover {
+  color: rgb(172, 127, 43);
+  transform: scale(1.1);
+  font-weight: bold;
+}
+.container-relative .menu-container {
+  width: 70%;
+  background: rgb(243, 243, 243);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+  border-top: 5px solid rgb(172, 127, 43);
+}
+
+/*grid with 2 columns and 4 lignes*/
+.container-absolute {
+  background: url(..//../img/bg-menu-01.jpg) center/cover;
+  width: 1450px;
+  height: 600px;
+  position: absolute;
+  transform: translateY(-75%);
 }/*# sourceMappingURL=index.css.map */
