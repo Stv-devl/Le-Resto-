@@ -1,0 +1,140 @@
+/**********************************************************
+Header setting 
+**********************************************************/
+
+/*Set header-top container 100vh with nav bar*/
+.header-top {
+  background: url(..//../img/bg-slider-06.jpg) center/cover;
+  min-height: 100vh;
+  /*Set nav bar with grid 3 columns*/
+  nav {
+    width: 85%;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 80px;
+    align-items: center;
+    margin: 0 auto;
+    /*Set Resto text*/
+    h4 {
+      font-family: $font1;
+      font-size: 2.1rem;
+      color: $white1;
+    }
+    /*Set nav bar with flex and set font*/
+    .nav-bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      @include white-title01;
+      font-size: 0.8rem;
+      /*creater hover in nav bar => text bigger and change color to orange*/
+      li {
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          color: $orange1;
+          transform: scale(1.1);
+          font-weight: bold;
+        }
+      }
+    }
+    /*creater hover in icons => change color to orange*/
+    .icons {
+      display: flex;
+      justify-content: space-evenly;
+
+      a {
+        color: $white1;
+
+        &:hover {
+          color: $orange1;
+        }
+      }
+    }
+  }
+  /*set texte in middle of header with flexbox, */
+  .text-container {
+    @include center;
+    flex-direction: column;
+    min-height: 70vh;
+    /*set h2*/
+    h2 {
+      @include orange-title;
+      font-size: 4rem;
+      font-weight: 300;
+      height: 40px;
+    }
+    /*set h1 */
+    h1 {
+      @include white-title01;
+      font-size: 5rem;
+      letter-spacing: 8px;
+    }
+    /*set margin around img*/
+    img {
+      margin: 20px auto;
+    }
+    /*set P*/
+    p {
+      @include white-title01;
+      letter-spacing: 8px;
+      margin: 5px auto;
+      font-size: 1rem;
+      letter-spacing: 8px;
+    }
+  }
+}
+/*grid 2 columns for bottom of header */
+.grid-header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 500px;
+  background: $white1;
+  /*create dash border + flexbox for center and separate elements*/
+  .header-b-left {
+    border: 1.5px dashed $orange1;
+    width: 95%;
+    height: 93%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .flex-c-1 h3 {
+      @include orange-title;
+      font-size: 1.8rem;
+    }
+    .flex-c-1 h4 {
+      text-transform: uppercase;
+      font-family: $font3;
+      font-size: 1.5rem;
+    }
+    /*bigger img*/
+    .flex-c-2 {
+      width: 40px;
+      height: 40px;
+    }
+        /*set text*/
+    .flex-c-3 {
+      font-size: 0.9rem;
+      margin: 0 7px;
+    }
+            /*set img in circle*/
+    .flex-c-4 img {
+      width: 60%;
+      border-radius: 50%;
+      border-bottom: 10px;}
+     .flex-c-4  p {
+        text-transform: uppercase;
+        color: $grey1;
+        font-size: 0.8rem;
+        font-family: $font3;
+      }
+    
+  }
+}
+.header-b-right {
+  background: url(..//..//img/store-01.jpg) center/cover;
+}
