@@ -1,3 +1,6 @@
+/**********************************************************
+Section 1 setting => container relative & absolutes 
+**********************************************************/
 
 /*Set relative container separate element with 1 flexbox*/
 .container-relative {
@@ -5,15 +8,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 900px;
+  height: 1000px;
   position: relative;
   z-index: 1;
 
-   h3 {
+  h3 {
     @include orange-title;
-    font-size:2.5rem;
+    font-size: 2.5rem;
   }
-  
+
   img {
     width: 30px;
     height: 30px;
@@ -30,18 +33,18 @@
     color: $white1;
 
     li {
-        border-bottom: 1px solid $white1;
-        cursor: pointer;
-        transition: 0.3s;
+      border-bottom: 1px solid $white1;
+      cursor: pointer;
+      transition: 0.3s;
 
-        &:hover {
-          color: $orange1;
-          transform: scale(1.1);
-          font-weight: bold;
-        }
+      &:hover {
+        color: $orange1;
+        transform: scale(1.1);
+        font-weight: bold;
+      }
     }
   }
-    /*grid with 2 columns and 4 lignes*/
+  /*grid with 2 columns and 4 lignes*/
   .menu-container {
     width: 70%;
     background: $white1;
@@ -50,13 +53,53 @@
     align-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 50px;
     margin: 0 auto;
     border-top: 5px solid $orange1;
+    padding: 20px;
+
+    /*grid with 3 columns for every menu + dashed border*/
+    .menu1,
+    .menu2,
+    .menu3,
+    .menu4,
+    .menu5,
+    .menu6,
+    .menu7,
+    .menu8 {
+      display: grid;
+      grid-template-columns: 20% 60% 20%;
+      grid-template-rows: 180px;
+      align-items: center;
+      text-align: left;
+      border-bottom: 1px dashed $grey3;
+
+      /*img size + radius*/
+      img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin: 5px;
+      }
+
+      /*set txt*/
+      h4 {
+        text-transform: uppercase;
+        margin-left: 10px;
+      }
+      p {
+        margin-left: 10px;
+      }
+      /*set txt*/
+      h3 {
+        font-family: $font3;
+        font-size: 1.4rem;
+        font-weight: 300;
+      }
+    }
   }
-
-
 }
-    /*grid with 2 columns and 4 lignes*/
+/*grid with 2 columns and 4 lignes*/
 .container-absolute {
   background: url(..//../img/bg-menu-01.jpg) center/cover;
   width: 1450px;

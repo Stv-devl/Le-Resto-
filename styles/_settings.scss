@@ -30,7 +30,6 @@ $grey2: rgb(233, 233, 233);
 $grey3: rgb(105, 105, 105);
 $orange1: rgb(172, 127, 43);
 
-
 /*set mixin for titles attributions and center elements*/
 @mixin orange-title {
   font-family: $font1;
@@ -87,5 +86,3 @@ h2,
 h3 {
   color: $orange1;
 }
-
-
