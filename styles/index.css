@@ -399,6 +399,19 @@ Section 2 setting => Booking
   justify-content: space-evenly;
   background: rgb(243, 243, 243);
 }
+.booking .booking-right h3 {
+  font-family: allura, sans-serif;
+  color: rgb(172, 127, 43);
+  font-size: 2.5rem;
+  font-weight: 400;
+  height: 40px;
+}
+.booking .booking-right h2 {
+  color: rgb(17, 17, 17);
+  font-family: roboto, serif;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
 .booking .booking-right img {
   width: 30px;
   height: 30px;
@@ -409,6 +422,13 @@ Section 2 setting => Booking
   grid-template-rows: 1fr 1fr;
   gap: 20px;
 }
+.booking .booking-right form select,
+.booking .booking-right form input {
+  height: 40px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(193, 188, 188);
+}
 .booking .booking-right button {
   font-family: poppins, serif;
   color: rgb(243, 243, 243);
@@ -418,6 +438,11 @@ Section 2 setting => Booking
   height: 45px;
   border-radius: 25px;
   letter-spacing: 2px;
+}
+.booking .booking-right button:hover {
+  color: rgb(172, 127, 43);
+  transform: scale(1.1);
+  font-weight: bold;
 }
 
 /**********************************************************

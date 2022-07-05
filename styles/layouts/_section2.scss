@@ -60,6 +60,20 @@ Section 2 setting => Booking
     justify-content: space-evenly;
     background: $white1;
 
+    h3 {
+      @include orange-title;
+      font-size: 2.5rem;
+      font-weight: 400;
+      height: 40px;
+    }
+
+    h2 {
+      color: $black1;
+      font-family: $font3;
+      font-size: 1.7rem;
+      text-transform: uppercase;
+    }
+
     img {
       width: 30px;
       height: 30px;
@@ -70,6 +84,14 @@ Section 2 setting => Booking
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       gap: 20px;
+
+      select,
+      input {
+        height: 40px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid $grey1;
+      }
     }
 
     button {
@@ -79,6 +101,12 @@ Section 2 setting => Booking
       height: 45px;
       border-radius: 25px;
       letter-spacing: 2px;
+
+      &:hover {
+        color: $orange1;
+        transform: scale(1.1);
+        font-weight: bold;
+      }
     }
   }
 }
