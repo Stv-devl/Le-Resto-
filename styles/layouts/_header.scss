@@ -62,8 +62,6 @@ Header setting
     h2 {
       @include orange-title;
       font-size: 4rem;
-      font-weight: 300;
-      height: 40px;
     }
     /*set h1 */
     h1 {
@@ -104,7 +102,6 @@ Header setting
 
     .flex-c-1 h3 {
       @include orange-title;
-      font-size: 1.8rem;
     }
     .flex-c-1 h4 {
       text-transform: uppercase;
@@ -127,7 +124,7 @@ Header setting
       border-radius: 50%;
       border-bottom: 10px;
     }
-        /*set txt*/
+    /*set txt*/
     .flex-c-4 p {
       text-transform: uppercase;
       color: $grey1;
@@ -136,7 +133,7 @@ Header setting
     }
   }
 }
-        /*img left*/
+/*img left*/
 .header-b-right {
   background: url(..//..//img/store-01.jpg) center/cover;
 }

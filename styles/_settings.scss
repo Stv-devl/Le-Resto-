@@ -34,6 +34,8 @@ $orange1: rgb(172, 127, 43);
 @mixin orange-title {
   font-family: $font1;
   color: $orange1;
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 @mixin white-title01 {
   font-family: $font2;

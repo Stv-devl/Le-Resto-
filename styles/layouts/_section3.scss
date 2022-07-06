@@ -1,3 +1,95 @@
 /**********************************************************
 Section 3 setting => Event
 **********************************************************/
+
+.event-txt h3 {
+  @include orange-title;
+  height: 40px;
+}
+
+.event-txt h2 {
+  @include white-title01;
+  height: 40px;
+  letter-spacing: 2px;
+}
+
+.event-grid {
+  width: 70%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 200px 200px;
+  grid-template-areas:
+    "t1 t2"
+    "t3 t2";
+  gap: 20px;
+  margin: 0 auto;
+  text-align: left;
+
+  H4 {
+    font-family: $font2;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+
+  h5 {
+    text-transform: uppercase;
+  }
+
+  .event-right-top {
+    grid-area: t1;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 200px;
+
+    .grid1-left {
+      background: url(..//../img/event-01.jpg) center/cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    .grid1-right {
+      background: $white1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 20px;
+    }
+  }
+
+  .event-right-bottom {
+    grid-area: t3;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 200px;
+
+    .grid2-left {
+      background: url(..//../img/event-02.jpg) center/cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    .grid2-right {
+      background: $white1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 20px;
+    }
+  }
+
+  .event-left {
+    grid-area: t2;
+    background: $white1;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+}

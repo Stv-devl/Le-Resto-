@@ -119,9 +119,9 @@ Header setting
 .header-top .text-container h2 {
   font-family: allura, sans-serif;
   color: rgb(172, 127, 43);
+  font-size: 2.5rem;
+  font-weight: 400;
   font-size: 4rem;
-  font-weight: 300;
-  height: 40px;
 }
 .header-top .text-container h1 {
   font-family: poppins, serif;
@@ -168,7 +168,8 @@ Header setting
 .grid-header .header-b-left .flex-c-1 h3 {
   font-family: allura, sans-serif;
   color: rgb(172, 127, 43);
-  font-size: 1.8rem;
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 .grid-header .header-b-left .flex-c-1 h4 {
   text-transform: uppercase;
@@ -219,6 +220,7 @@ Section 1 setting => container relative & absolutes
   font-family: allura, sans-serif;
   color: rgb(172, 127, 43);
   font-size: 2.5rem;
+  font-weight: 400;
 }
 .container-relative img {
   width: 30px;
@@ -342,7 +344,7 @@ Section 2 setting => Booking
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: 500px;
-  margin: 200px auto;
+  margin: 200px auto 100px auto;
   background: rgb(17, 17, 17);
   /*diplay flex for align text*/
   /*flex for align elements*/
@@ -448,6 +450,92 @@ Section 2 setting => Booking
 /**********************************************************
 Section 3 setting => Event
 **********************************************************/
+.event-txt h3 {
+  font-family: allura, sans-serif;
+  color: rgb(172, 127, 43);
+  font-size: 2.5rem;
+  font-weight: 400;
+  height: 40px;
+}
+
+.event-txt h2 {
+  font-family: poppins, serif;
+  color: rgb(243, 243, 243);
+  text-transform: uppercase;
+  height: 40px;
+  letter-spacing: 2px;
+}
+
+.event-grid {
+  width: 70%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 200px 200px;
+  grid-template-areas: "t1 t2" "t3 t2";
+  gap: 20px;
+  margin: 0 auto;
+  text-align: left;
+}
+.event-grid H4 {
+  font-family: poppins, serif;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.event-grid h5 {
+  text-transform: uppercase;
+}
+.event-grid .event-right-top {
+  grid-area: t1;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 200px;
+}
+.event-grid .event-right-top .grid1-left {
+  background: url(..//../img/event-01.jpg) center/cover;
+  width: 100%;
+  height: 100%;
+}
+.event-grid .event-right-top .grid1-right {
+  background: rgb(243, 243, 243);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.event-grid .event-right-bottom {
+  grid-area: t3;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 200px;
+}
+.event-grid .event-right-bottom .grid2-left {
+  background: url(..//../img/event-02.jpg) center/cover;
+  width: 100%;
+  height: 100%;
+}
+.event-grid .event-right-bottom .grid2-right {
+  background: rgb(243, 243, 243);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.event-grid .event-left {
+  grid-area: t2;
+  background: rgb(243, 243, 243);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
 /**********************************************************
 Section 4 setting => Map
 **********************************************************/
