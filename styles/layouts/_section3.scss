@@ -13,12 +13,16 @@ Section 3 setting => Event
   letter-spacing: 2px;
 }
 
+.ic-plate6 {
+  margin: 30px 0;
+}
+
 .event-grid {
   width: 70%;
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 60% 40%;
   grid-template-rows: 200px 200px;
   grid-template-areas:
     "t1 t2"
@@ -46,9 +50,28 @@ Section 3 setting => Event
     grid-template-rows: 200px;
 
     .grid1-left {
+      position: relative;
       background: url(..//../img/event-01.jpg) center/cover;
       width: 100%;
       height: 100%;
+
+      .absolute1 {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        background: $black1;
+        color: $white1;
+        text-transform: uppercase;
+        text-align: center;
+        top: 30%;
+        left: 35%;
+        transform: translate(30% 35%);
+
+        h2 {
+          color: white;
+          padding: 10px 0 0 0;
+        }
+      }
     }
 
     .grid1-right {
@@ -70,9 +93,28 @@ Section 3 setting => Event
     grid-template-rows: 200px;
 
     .grid2-left {
+      position: relative;
       background: url(..//../img/event-02.jpg) center/cover;
       width: 100%;
       height: 100%;
+
+      .absolute2 {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        background: $black1;
+        color: $white1;
+        text-transform: uppercase;
+        text-align: center;
+        top: 30%;
+        left: 35%;
+        transform: translate(30% 35%);
+
+        h2 {
+          color: white;
+          padding: 10px 0 0 0;
+        }
+      }
     }
 
     .grid2-right {
@@ -86,10 +128,35 @@ Section 3 setting => Event
   }
 
   .event-left {
+    position: relative;
     grid-area: t2;
-    background: $white1;
+    background: url(..//../img/event-03.jpg) center/cover;
     width: 100%;
     height: 100%;
-    padding: 20px;
+
+    .event-left-container {
+      width: 90%;
+      height: 90%;
+      background: $white1;
+      margin: 21px auto;
+
+      .absolute3 {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        background: $black1;
+        color: $white1;
+        text-transform: uppercase;
+        text-align: center;
+        top: 0%;
+        left: 40%;
+        transform: translate(0% 40%);
+
+        h2 {
+          color: $white1;
+          padding: 10px 0 0 0;
+        }
+      }
+    }
   }
 }

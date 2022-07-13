@@ -466,12 +466,16 @@ Section 3 setting => Event
   letter-spacing: 2px;
 }
 
+.ic-plate6 {
+  margin: 30px 0;
+}
+
 .event-grid {
   width: 70%;
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 60% 40%;
   grid-template-rows: 200px 200px;
   grid-template-areas: "t1 t2" "t3 t2";
   gap: 20px;
@@ -495,9 +499,26 @@ Section 3 setting => Event
   grid-template-rows: 200px;
 }
 .event-grid .event-right-top .grid1-left {
+  position: relative;
   background: url(..//../img/event-01.jpg) center/cover;
   width: 100%;
   height: 100%;
+}
+.event-grid .event-right-top .grid1-left .absolute1 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: rgb(17, 17, 17);
+  color: rgb(243, 243, 243);
+  text-transform: uppercase;
+  text-align: center;
+  top: 30%;
+  left: 35%;
+  transform: translate(30% 35%);
+}
+.event-grid .event-right-top .grid1-left .absolute1 h2 {
+  color: white;
+  padding: 10px 0 0 0;
 }
 .event-grid .event-right-top .grid1-right {
   background: rgb(243, 243, 243);
@@ -516,9 +537,26 @@ Section 3 setting => Event
   grid-template-rows: 200px;
 }
 .event-grid .event-right-bottom .grid2-left {
+  position: relative;
   background: url(..//../img/event-02.jpg) center/cover;
   width: 100%;
   height: 100%;
+}
+.event-grid .event-right-bottom .grid2-left .absolute2 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: rgb(17, 17, 17);
+  color: rgb(243, 243, 243);
+  text-transform: uppercase;
+  text-align: center;
+  top: 30%;
+  left: 35%;
+  transform: translate(30% 35%);
+}
+.event-grid .event-right-bottom .grid2-left .absolute2 h2 {
+  color: white;
+  padding: 10px 0 0 0;
 }
 .event-grid .event-right-bottom .grid2-right {
   background: rgb(243, 243, 243);
@@ -529,11 +567,33 @@ Section 3 setting => Event
   padding: 20px;
 }
 .event-grid .event-left {
+  position: relative;
   grid-area: t2;
-  background: rgb(243, 243, 243);
+  background: url(..//../img/event-03.jpg) center/cover;
   width: 100%;
   height: 100%;
-  padding: 20px;
+}
+.event-grid .event-left .event-left-container {
+  width: 90%;
+  height: 90%;
+  background: rgb(243, 243, 243);
+  margin: 21px auto;
+}
+.event-grid .event-left .event-left-container .absolute3 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: rgb(17, 17, 17);
+  color: rgb(243, 243, 243);
+  text-transform: uppercase;
+  text-align: center;
+  top: 0%;
+  left: 40%;
+  transform: translate(0% 40%);
+}
+.event-grid .event-left .event-left-container .absolute3 h2 {
+  color: rgb(243, 243, 243);
+  padding: 10px 0 0 0;
 }
 
 /**********************************************************
