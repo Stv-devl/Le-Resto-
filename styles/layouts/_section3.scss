@@ -28,7 +28,7 @@ Section 3 setting => Event
     "t1 t2"
     "t3 t2";
   gap: 20px;
-  margin: 0 auto;
+  margin: 0 auto 400px auto;
   text-align: left;
 
   H4 {
@@ -39,6 +39,12 @@ Section 3 setting => Event
 
   h5 {
     text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      color: $orange1;
+    }
   }
 
   .event-right-top {
@@ -59,7 +65,7 @@ Section 3 setting => Event
         position: absolute;
         width: 80px;
         height: 80px;
-        background: $black1;
+        background: $black2;
         color: $white1;
         text-transform: uppercase;
         text-align: center;
@@ -81,6 +87,15 @@ Section 3 setting => Event
       flex-direction: column;
       justify-content: space-evenly;
       padding: 20px;
+
+      p {
+        color: $grey1;
+        font-size: 0.8rem;
+      }
+      a {
+        color: $grey1;
+        margin: 0 2px;
+      }
     }
   }
 
@@ -102,7 +117,7 @@ Section 3 setting => Event
         position: absolute;
         width: 80px;
         height: 80px;
-        background: $black1;
+        background: $black2;
         color: $white1;
         text-transform: uppercase;
         text-align: center;
@@ -124,6 +139,15 @@ Section 3 setting => Event
       flex-direction: column;
       justify-content: space-evenly;
       padding: 20px;
+
+      p {
+        color: $grey1;
+        font-size: 0.8rem;
+      }
+      a {
+        color: $grey1;
+        margin: 0 2px;
+      }
     }
   }
 
@@ -133,6 +157,7 @@ Section 3 setting => Event
     background: url(..//../img/event-03.jpg) center/cover;
     width: 100%;
     height: 100%;
+    text-align: center;
 
     .event-left-container {
       width: 90%;
@@ -140,11 +165,25 @@ Section 3 setting => Event
       background: $white1;
       margin: 21px auto;
 
+      h4 {
+        padding: 100px 30px 20px 30px;
+      }
+
+      p {
+        color: $grey1;
+        font-size: 0.8rem;
+        padding: 0 0 125px 0;
+      }
+      a {
+        color: $grey1;
+        margin: 0 2px;
+      }
+
       .absolute3 {
         position: absolute;
         width: 80px;
         height: 80px;
-        background: $black1;
+        background: $black2;
         color: $white1;
         text-transform: uppercase;
         text-align: center;
